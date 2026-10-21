@@ -1,0 +1,17 @@
+{
+  "name": "我的脚本",
+  "icon": "sparkles",
+  "color": "rgba(10, 132, 255, 1)",
+  "version": "1.0.0",
+  "description": "Script description in English",
+  "author": {
+    "name": "WWWeng🐝",
+    "email": "",
+    "homepage": ""
+  },
+  "contributors": [],
+  "remoteResource": {
+    "url": "https://github.com/vvvvvveng/Scripting-releases/tree/main/我的脚本",
+    "autoUpdateInterval": 21600
+  }
+}

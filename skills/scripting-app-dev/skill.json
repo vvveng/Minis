@@ -1,0 +1,9 @@
+{
+  "color": "systemIndigo",
+  "icon": "hammer.fill",
+  "remoteResource": {
+    "url": "https://github.com/vvvvvveng/Minis/tree/main/skills/scripting-app-dev",
+    "autoUpdateInterval": 21600,
+    "hash": "fe713846ffc6026617148f02ff3e3198"
+  }
+}

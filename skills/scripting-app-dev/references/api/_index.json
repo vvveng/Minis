@@ -1,0 +1,1117 @@
+{
+  "/var/minis/skills/scripting-app-dev/references/api/AppIntent_md.md": {
+    "url": "https://scriptingapp.github.io/guide/AppIntent.md",
+    "path": "/guide/AppIntent.md",
+    "title": "AppIntent"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Assistant_Assistant_Conversation_APIs_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Assistant/Assistant%20Conversation%20APIs.md",
+    "path": "/guide/Assistant/Assistant Conversation APIs.md",
+    "title": "Assistant Conversation APIs"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Assistant_Assistant_Quick_Start_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Assistant/Assistant%20Quick%20Start.md",
+    "path": "/guide/Assistant/Assistant Quick Start.md",
+    "title": "Assistant Quick Start"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Assistant_requestStreaming_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Assistant/requestStreaming.md",
+    "path": "/guide/Assistant/requestStreaming.md",
+    "title": "requestStreaming"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Assistant_requestStructuredData_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Assistant/requestStructuredData.md",
+    "path": "/guide/Assistant/requestStructuredData.md",
+    "title": "requestStructuredData"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Control_Widget_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Control%20Widget.md",
+    "path": "/guide/Control Widget.md",
+    "title": "Control Widget"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Custom_Keyboard_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Custom%20Keyboard.md",
+    "path": "/guide/Custom Keyboard.md",
+    "title": "Custom Keyboard"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVAsset_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVAsset.md",
+    "path": "/guide/Device Capabilities/AVAsset.md",
+    "title": "AVAsset"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_CaptureVideoPreviewView_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/CaptureVideoPreviewView.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/CaptureVideoPreviewView.md",
+    "title": "CaptureVideoPreviewView"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Device_formats_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Device%20formats/index.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Device formats/index.md",
+    "title": "Device formats"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Device_formats_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Device%20formats/index_example.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Device formats/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Live_Photo_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Live%20Photo/index.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Live Photo/index.md",
+    "title": "Live Photo"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Live_Photo_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Live%20Photo/index_example.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Live Photo/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Quick_Start_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Quick%20Start/index.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Quick Start/index.md",
+    "title": "Quick Start"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Quick_Start_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Quick%20Start/index_example.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Quick Start/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Responsive_capture_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Responsive%20capture/index.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Responsive capture/index.md",
+    "title": "Responsive capture"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_Responsive_capture_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/Responsive%20capture/index_example.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/Responsive capture/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVCaptureSession_Camera_Control_VideoRecorder_vs_AVCaptureSession_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVCaptureSession%20%26%20Camera%20Control/VideoRecorder%20vs%20AVCaptureSession.md",
+    "path": "/guide/Device Capabilities/AVCaptureSession & Camera Control/VideoRecorder vs AVCaptureSession.md",
+    "title": "VideoRecorder vs AVCaptureSession"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVMetadataItem_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVMetadataItem.md",
+    "path": "/guide/Device Capabilities/AVMetadataItem.md",
+    "title": "AVMetadataItem"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AVPlayer_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AVPlayer.md",
+    "path": "/guide/Device Capabilities/AVPlayer.md",
+    "title": "AVPlayer"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AppStore_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AppStore.md",
+    "path": "/guide/Device Capabilities/AppStore.md",
+    "title": "AppStore"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_AudioRecorder_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/AudioRecorder.md",
+    "path": "/guide/Device Capabilities/AudioRecorder.md",
+    "title": "AudioRecorder"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_BackgroundKeeper_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/BackgroundKeeper.md",
+    "path": "/guide/Device Capabilities/BackgroundKeeper.md",
+    "title": "BackgroundKeeper"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Bluetooth_BluetoothCentralManager_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Bluetooth/BluetoothCentralManager.md",
+    "path": "/guide/Device Capabilities/Bluetooth/BluetoothCentralManager.md",
+    "title": "BluetoothCentralManager"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Bluetooth_BluetoothCharacteristic_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Bluetooth/BluetoothCharacteristic.md",
+    "path": "/guide/Device Capabilities/Bluetooth/BluetoothCharacteristic.md",
+    "title": "BluetoothCharacteristic"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Bluetooth_BluetoothPeripheral_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Bluetooth/BluetoothPeripheral.md",
+    "path": "/guide/Device Capabilities/Bluetooth/BluetoothPeripheral.md",
+    "title": "BluetoothPeripheral"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Bluetooth_BluetoothPeripheralManager_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Bluetooth/BluetoothPeripheralManager.md",
+    "path": "/guide/Device Capabilities/Bluetooth/BluetoothPeripheralManager.md",
+    "title": "BluetoothPeripheralManager"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Bluetooth_BluetoothService_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Bluetooth/BluetoothService.md",
+    "path": "/guide/Device Capabilities/Bluetooth/BluetoothService.md",
+    "title": "BluetoothService"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Calendar_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Calendar.md",
+    "path": "/guide/Device Capabilities/Calendar.md",
+    "title": "Calendar"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_CalendarEvent_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/CalendarEvent.md",
+    "path": "/guide/Device Capabilities/CalendarEvent.md",
+    "title": "CalendarEvent"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Contact_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Contact/index.md",
+    "path": "/guide/Device Capabilities/Contact/index.md",
+    "title": "Contact"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Contact_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Contact/index_example.md",
+    "path": "/guide/Device Capabilities/Contact/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Device_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Device/index.md",
+    "path": "/guide/Device Capabilities/Device/index.md",
+    "title": "Device"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Device_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Device/index_example.md",
+    "path": "/guide/Device Capabilities/Device/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_DocumentInteraction_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/DocumentInteraction/index.md",
+    "path": "/guide/Device Capabilities/DocumentInteraction/index.md",
+    "title": "DocumentInteraction"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_DocumentInteraction_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/DocumentInteraction/index_example.md",
+    "path": "/guide/Device Capabilities/DocumentInteraction/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_DocumentPicker_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/DocumentPicker.md",
+    "path": "/guide/Device Capabilities/DocumentPicker.md",
+    "title": "DocumentPicker"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_EventAlarm_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/EventAlarm.md",
+    "path": "/guide/Device Capabilities/EventAlarm.md",
+    "title": "EventAlarm"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_FontPicker_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/FontPicker.md",
+    "path": "/guide/Device Capabilities/FontPicker.md",
+    "title": "FontPicker"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HapticFeedback_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HapticFeedback.md",
+    "path": "/guide/Device Capabilities/HapticFeedback.md",
+    "title": "HapticFeedback"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthActivitySummary_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthActivitySummary.md",
+    "path": "/guide/Device Capabilities/Health/HealthActivitySummary.md",
+    "title": "HealthActivitySummary"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthCategorySample_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthCategorySample.md",
+    "path": "/guide/Device Capabilities/Health/HealthCategorySample.md",
+    "title": "HealthCategorySample"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthCategoryType_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthCategoryType.md",
+    "path": "/guide/Device Capabilities/Health/HealthCategoryType.md",
+    "title": "HealthCategoryType"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthCategoryValue_Types_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthCategoryValue%20Types.md",
+    "path": "/guide/Device Capabilities/Health/HealthCategoryValue Types.md",
+    "title": "HealthCategoryValue Types"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthCharacteristicType_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthCharacteristicType.md",
+    "path": "/guide/Device Capabilities/Health/HealthCharacteristicType.md",
+    "title": "HealthCharacteristicType"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthCorrelation_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthCorrelation.md",
+    "path": "/guide/Device Capabilities/Health/HealthCorrelation.md",
+    "title": "HealthCorrelation"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthHeartbeatSeriesSample_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthHeartbeatSeriesSample.md",
+    "path": "/guide/Device Capabilities/Health/HealthHeartbeatSeriesSample.md",
+    "title": "HealthHeartbeatSeriesSample"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthKit_Permission_Behavior_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthKit%20Permission%20Behavior.md",
+    "path": "/guide/Device Capabilities/Health/HealthKit Permission Behavior.md",
+    "title": "HealthKit Permission Behavior"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthQuantitySample_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthQuantitySample.md",
+    "path": "/guide/Device Capabilities/Health/HealthQuantitySample.md",
+    "title": "HealthQuantitySample"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthQuantityType_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthQuantityType.md",
+    "path": "/guide/Device Capabilities/Health/HealthQuantityType.md",
+    "title": "HealthQuantityType"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthStatistics_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthStatistics.md",
+    "path": "/guide/Device Capabilities/Health/HealthStatistics.md",
+    "title": "HealthStatistics"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthStatisticsCollection_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthStatisticsCollection.md",
+    "path": "/guide/Device Capabilities/Health/HealthStatisticsCollection.md",
+    "title": "HealthStatisticsCollection"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthUnit_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthUnit/index.md",
+    "path": "/guide/Device Capabilities/Health/HealthUnit/index.md",
+    "title": "HealthUnit"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthUnit_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthUnit/index_example.md",
+    "path": "/guide/Device Capabilities/Health/HealthUnit/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthWorkout_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthWorkout.md",
+    "path": "/guide/Device Capabilities/Health/HealthWorkout.md",
+    "title": "HealthWorkout"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthWorkoutActivityType_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthWorkoutActivityType.md",
+    "path": "/guide/Device Capabilities/Health/HealthWorkoutActivityType.md",
+    "title": "HealthWorkoutActivityType"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_HealthWorkoutEvent_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/HealthWorkoutEvent.md",
+    "path": "/guide/Device Capabilities/Health/HealthWorkoutEvent.md",
+    "title": "HealthWorkoutEvent"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Query_Statistics_Collection_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Query%20Statistics%20Collection.md",
+    "path": "/guide/Device Capabilities/Health/Query Statistics Collection.md",
+    "title": "Query Statistics Collection"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Query_Statistics_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Query%20Statistics.md",
+    "path": "/guide/Device Capabilities/Health/Query Statistics.md",
+    "title": "Query Statistics"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Activity_Summaries_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Activity%20Summaries.md",
+    "path": "/guide/Device Capabilities/Health/Reading Activity Summaries.md",
+    "title": "Reading Activity Summaries"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Category_Samples_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Category%20Samples.md",
+    "path": "/guide/Device Capabilities/Health/Reading Category Samples.md",
+    "title": "Reading Category Samples"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Characteristic_Data_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Characteristic%20Data.md",
+    "path": "/guide/Device Capabilities/Health/Reading Characteristic Data.md",
+    "title": "Reading Characteristic Data"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Correlation_Data_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Correlation%20Data.md",
+    "path": "/guide/Device Capabilities/Health/Reading Correlation Data.md",
+    "title": "Reading Correlation Data"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Heartbeat_Series_Samples_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Heartbeat%20Series%20Samples.md",
+    "path": "/guide/Device Capabilities/Health/Reading Heartbeat Series Samples.md",
+    "title": "Reading Heartbeat Series Samples"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Medications_and_Dose_Events_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Medications%20and%20Dose%20Events/index.md",
+    "path": "/guide/Device Capabilities/Health/Reading Medications and Dose Events/index.md",
+    "title": "Reading Medications and Dose Events"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Medications_and_Dose_Events_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Medications%20and%20Dose%20Events/index_example.md",
+    "path": "/guide/Device Capabilities/Health/Reading Medications and Dose Events/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Quantity_Samples_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Quantity%20Samples.md",
+    "path": "/guide/Device Capabilities/Health/Reading Quantity Samples.md",
+    "title": "Reading Quantity Samples"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Reading_Workout_Samples_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Reading%20Workout%20Samples.md",
+    "path": "/guide/Device Capabilities/Health/Reading Workout Samples.md",
+    "title": "Reading Workout Samples"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Requesting_Multiple_Permissions_at_Once_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Requesting%20Multiple%20Permissions%20at%20Once/index.md",
+    "path": "/guide/Device Capabilities/Health/Requesting Multiple Permissions at Once/index.md",
+    "title": "Requesting Multiple Permissions at Once"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Requesting_Multiple_Permissions_at_Once_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Requesting%20Multiple%20Permissions%20at%20Once/index_example.md",
+    "path": "/guide/Device Capabilities/Health/Requesting Multiple Permissions at Once/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Writing_Health_Category_Samples_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Writing%20Health%20Category%20Samples.md",
+    "path": "/guide/Device Capabilities/Health/Writing Health Category Samples.md",
+    "title": "Writing Health Category Samples"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Writing_Health_Correlation_Data_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Writing%20Health%20Correlation%20Data.md",
+    "path": "/guide/Device Capabilities/Health/Writing Health Correlation Data.md",
+    "title": "Writing Health Correlation Data"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Health_Writing_Health_Quantity_Samples_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Health/Writing%20Health%20Quantity%20Samples.md",
+    "path": "/guide/Device Capabilities/Health/Writing Health Quantity Samples.md",
+    "title": "Writing Health Quantity Samples"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HomeKit_HMAccessory_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HomeKit/HMAccessory.md",
+    "path": "/guide/Device Capabilities/HomeKit/HMAccessory.md",
+    "title": "HMAccessory"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HomeKit_HMActionSet_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HomeKit/HMActionSet.md",
+    "path": "/guide/Device Capabilities/HomeKit/HMActionSet.md",
+    "title": "HMActionSet"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HomeKit_HMCharacteristic_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HomeKit/HMCharacteristic.md",
+    "path": "/guide/Device Capabilities/HomeKit/HMCharacteristic.md",
+    "title": "HMCharacteristic"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HomeKit_HMHome_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HomeKit/HMHome.md",
+    "path": "/guide/Device Capabilities/HomeKit/HMHome.md",
+    "title": "HMHome"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HomeKit_HMRoom_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HomeKit/HMRoom.md",
+    "path": "/guide/Device Capabilities/HomeKit/HMRoom.md",
+    "title": "HMRoom"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HomeKit_HMService_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HomeKit/HMService.md",
+    "path": "/guide/Device Capabilities/HomeKit/HMService.md",
+    "title": "HMService"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_HomeKit_HMZone_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/HomeKit/HMZone.md",
+    "path": "/guide/Device Capabilities/HomeKit/HMZone.md",
+    "title": "HMZone"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_ImageIO_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/ImageIO.md",
+    "path": "/guide/Device Capabilities/ImageIO.md",
+    "title": "ImageIO"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Keychain_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Keychain.md",
+    "path": "/guide/Device Capabilities/Keychain.md",
+    "title": "Keychain"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_LanguageModelSession_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/LanguageModelSession.md",
+    "path": "/guide/Device Capabilities/LanguageModelSession.md",
+    "title": "LanguageModelSession"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_LocalAuth_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/LocalAuth.md",
+    "path": "/guide/Device Capabilities/LocalAuth.md",
+    "title": "LocalAuth"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Location_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Location/index.md",
+    "path": "/guide/Device Capabilities/Location/index.md",
+    "title": "Location"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Location_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Location/index_example.md",
+    "path": "/guide/Device Capabilities/Location/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MapKit_Map_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MapKit/Map/index.md",
+    "path": "/guide/Device Capabilities/MapKit/Map/index.md",
+    "title": "Map"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MapKit_Map_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MapKit/Map/index_example.md",
+    "path": "/guide/Device Capabilities/MapKit/Map/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MapKit_MapLookAround_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MapKit/MapLookAround/index.md",
+    "path": "/guide/Device Capabilities/MapKit/MapLookAround/index.md",
+    "title": "MapLookAround"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MapKit_MapLookAround_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MapKit/MapLookAround/index_example.md",
+    "path": "/guide/Device Capabilities/MapKit/MapLookAround/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MapKit_MapSnapshotter_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MapKit/MapSnapshotter/index.md",
+    "path": "/guide/Device Capabilities/MapKit/MapSnapshotter/index.md",
+    "title": "MapSnapshotter"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MapKit_MapSnapshotter_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MapKit/MapSnapshotter/index_example.md",
+    "path": "/guide/Device Capabilities/MapKit/MapSnapshotter/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MediaComposer_MediaComposer_Example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MediaComposer/MediaComposer%20Example.md",
+    "path": "/guide/Device Capabilities/MediaComposer/MediaComposer Example.md",
+    "title": "MediaComposer Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MediaComposer_MediaTime_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MediaComposer/MediaTime.md",
+    "path": "/guide/Device Capabilities/MediaComposer/MediaTime.md",
+    "title": "MediaTime"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MediaComposer_Quick_Start_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MediaComposer/Quick%20Start.md",
+    "path": "/guide/Device Capabilities/MediaComposer/Quick Start.md",
+    "title": "Quick Start"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MediaLibrary_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MediaLibrary.md",
+    "path": "/guide/Device Capabilities/MediaLibrary.md",
+    "title": "MediaLibrary"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_MediaPlayer_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/MediaPlayer.md",
+    "path": "/guide/Device Capabilities/MediaPlayer.md",
+    "title": "MediaPlayer"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_NaturalLanguage_Contextual_Embedding_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/NaturalLanguage/Contextual%20Embedding.md",
+    "path": "/guide/Device Capabilities/NaturalLanguage/Contextual Embedding.md",
+    "title": "Contextual Embedding"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_NaturalLanguage_Embedding_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/NaturalLanguage/Embedding.md",
+    "path": "/guide/Device Capabilities/NaturalLanguage/Embedding.md",
+    "title": "Embedding"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_NaturalLanguage_Gazetteer_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/NaturalLanguage/Gazetteer.md",
+    "path": "/guide/Device Capabilities/NaturalLanguage/Gazetteer.md",
+    "title": "Gazetteer"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_NaturalLanguage_Language_Recognition_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/NaturalLanguage/Language%20Recognition.md",
+    "path": "/guide/Device Capabilities/NaturalLanguage/Language Recognition.md",
+    "title": "Language Recognition"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_NaturalLanguage_Tagger_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/NaturalLanguage/Tagger.md",
+    "path": "/guide/Device Capabilities/NaturalLanguage/Tagger.md",
+    "title": "Tagger"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_NaturalLanguage_Tokenizer_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/NaturalLanguage/Tokenizer.md",
+    "path": "/guide/Device Capabilities/NaturalLanguage/Tokenizer.md",
+    "title": "Tokenizer"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Notification_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Notification/index.md",
+    "path": "/guide/Device Capabilities/Notification/index.md",
+    "title": "Notification"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Notification_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Notification/index_example.md",
+    "path": "/guide/Device Capabilities/Notification/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_PDF_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/PDF.md",
+    "path": "/guide/Device Capabilities/PDF.md",
+    "title": "PDF"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Pasteboard_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Pasteboard.md",
+    "path": "/guide/Device Capabilities/Pasteboard.md",
+    "title": "Pasteboard"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Photos_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Photos/index.md",
+    "path": "/guide/Device Capabilities/Photos/index.md",
+    "title": "Photos"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Photos_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Photos/index_example.md",
+    "path": "/guide/Device Capabilities/Photos/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Play_Video_AVPlayerView_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Play%20Video/AVPlayerView.md",
+    "path": "/guide/Device Capabilities/Play Video/AVPlayerView.md",
+    "title": "AVPlayerView"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Play_Video_VideoPlayer_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Play%20Video/VideoPlayer/index.md",
+    "path": "/guide/Device Capabilities/Play Video/VideoPlayer/index.md",
+    "title": "VideoPlayer"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Play_Video_VideoPlayer_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Play%20Video/VideoPlayer/index_example.md",
+    "path": "/guide/Device Capabilities/Play Video/VideoPlayer/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_QRCode_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/QRCode/index.md",
+    "path": "/guide/Device Capabilities/QRCode/index.md",
+    "title": "QRCode"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_QRCode_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/QRCode/index_example.md",
+    "path": "/guide/Device Capabilities/QRCode/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_QuickLook_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/QuickLook.md",
+    "path": "/guide/Device Capabilities/QuickLook.md",
+    "title": "QuickLook"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Recurrence_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Recurrence.md",
+    "path": "/guide/Device Capabilities/Recurrence.md",
+    "title": "Recurrence"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Reminder_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Reminder.md",
+    "path": "/guide/Device Capabilities/Reminder.md",
+    "title": "Reminder"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Safari_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Safari/index.md",
+    "path": "/guide/Device Capabilities/Safari/index.md",
+    "title": "Safari"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Safari_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Safari/index_example.md",
+    "path": "/guide/Device Capabilities/Safari/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Send_Mail_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Send%20Mail.md",
+    "path": "/guide/Device Capabilities/Send Mail.md",
+    "title": "Send Mail"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Send_Message_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Send%20Message.md",
+    "path": "/guide/Device Capabilities/Send Message.md",
+    "title": "Send Message"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_ShareSheet_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/ShareSheet.md",
+    "path": "/guide/Device Capabilities/ShareSheet.md",
+    "title": "ShareSheet"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_SharedAudioSession_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/SharedAudioSession.md",
+    "path": "/guide/Device Capabilities/SharedAudioSession.md",
+    "title": "SharedAudioSession"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Speech_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Speech/index.md",
+    "path": "/guide/Device Capabilities/Speech/index.md",
+    "title": "Speech"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Speech_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Speech/index_example.md",
+    "path": "/guide/Device Capabilities/Speech/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_SpeechRecognition_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/SpeechRecognition/index.md",
+    "path": "/guide/Device Capabilities/SpeechRecognition/index.md",
+    "title": "SpeechRecognition"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_SpeechRecognition_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/SpeechRecognition/index_example.md",
+    "path": "/guide/Device Capabilities/SpeechRecognition/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Spotlight_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Spotlight.md",
+    "path": "/guide/Device Capabilities/Spotlight.md",
+    "title": "Spotlight"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_SystemMusicPlayer_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/SystemMusicPlayer.md",
+    "path": "/guide/Device Capabilities/SystemMusicPlayer.md",
+    "title": "SystemMusicPlayer"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Translation_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Translation.md",
+    "path": "/guide/Device Capabilities/Translation.md",
+    "title": "Translation"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_VideoRecorder_VideoRecorder_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/VideoRecorder/VideoRecorder/index.md",
+    "path": "/guide/Device Capabilities/VideoRecorder/VideoRecorder/index.md",
+    "title": "VideoRecorder"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_VideoRecorder_VideoRecorder_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/VideoRecorder/VideoRecorder/index_example.md",
+    "path": "/guide/Device Capabilities/VideoRecorder/VideoRecorder/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_VideoRecorder_VideoRecorderPreviewView_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/VideoRecorder/VideoRecorderPreviewView.md",
+    "path": "/guide/Device Capabilities/VideoRecorder/VideoRecorderPreviewView.md",
+    "title": "VideoRecorderPreviewView"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Vision_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Vision.md",
+    "path": "/guide/Device Capabilities/Vision.md",
+    "title": "Vision"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Weather_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Weather/index.md",
+    "path": "/guide/Device Capabilities/Weather/index.md",
+    "title": "Weather"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_Weather_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/Weather/index_example.md",
+    "path": "/guide/Device Capabilities/Weather/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Device_Capabilities_WebViewController_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Device%20Capabilities/WebViewController.md",
+    "path": "/guide/Device Capabilities/WebViewController.md",
+    "title": "WebViewController"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Intent_Intent_continueInForeground_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Intent/Intent.continueInForeground.md",
+    "path": "/guide/Intent/Intent.continueInForeground.md",
+    "title": "Intent.continueInForeground"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Intent_Intent_requestConfirmation_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Intent/Intent.requestConfirmation.md",
+    "path": "/guide/Intent/Intent.requestConfirmation.md",
+    "title": "Intent.requestConfirmation"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Intent_Quick_Start_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Intent/Quick%20Start.md",
+    "path": "/guide/Intent/Quick Start.md",
+    "title": "Quick Start"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Intent_SnippetIntent_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Intent/SnippetIntent.md",
+    "path": "/guide/Intent/SnippetIntent.md",
+    "title": "SnippetIntent"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Interactive_Widget_and_LiveActivity_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Interactive%20Widget%20and%20LiveActivity.md",
+    "path": "/guide/Interactive Widget and LiveActivity.md",
+    "title": "Interactive Widget and LiveActivity"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Script_Per-Script_Permissions_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Script/Per-Script%20Permissions.md",
+    "path": "/guide/Script/Per-Script Permissions.md",
+    "title": "Per-Script Permissions"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Script_Script_Minimization_and_Resume_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Script/Script%20Minimization%20and%20Resume.md",
+    "path": "/guide/Script/Script Minimization and Resume.md",
+    "title": "Script Minimization and Resume"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Script_Script_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Script/Script.md",
+    "path": "/guide/Script/Script.md",
+    "title": "Script"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/TranslationUIProvider_md.md": {
+    "url": "https://scriptingapp.github.io/guide/TranslationUIProvider.md",
+    "path": "/guide/TranslationUIProvider.md",
+    "title": "TranslationUIProvider"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_CloudSharedData_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/CloudSharedData.md",
+    "path": "/guide/Utilities/CloudSharedData.md",
+    "title": "CloudSharedData"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_Crypto_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/Crypto.md",
+    "path": "/guide/Utilities/Crypto.md",
+    "title": "Crypto"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_Data_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/Data.md",
+    "path": "/guide/Utilities/Data.md",
+    "title": "Data"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_DateFormatter_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/DateFormatter.md",
+    "path": "/guide/Utilities/DateFormatter.md",
+    "title": "DateFormatter"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_FileManager_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/FileManager.md",
+    "path": "/guide/Utilities/FileManager.md",
+    "title": "FileManager"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_JWT_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/JWT.md",
+    "path": "/guide/Utilities/JWT.md",
+    "title": "JWT"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_Request_FormData_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/Request/FormData.md",
+    "path": "/guide/Utilities/Request/FormData.md",
+    "title": "FormData"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_Request_fetch_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/Request/fetch.md",
+    "path": "/guide/Utilities/Request/fetch.md",
+    "title": "fetch"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_SQLite_Database_and_Connection_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/SQLite/Database%20and%20Connection.md",
+    "path": "/guide/Utilities/SQLite/Database and Connection.md",
+    "title": "Database and Connection"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_Safari_Browser_Scripts_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/Safari%20Browser%20Scripts.md",
+    "path": "/guide/Utilities/Safari Browser Scripts.md",
+    "title": "Safari Browser Scripts"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_Storage_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/Storage.md",
+    "path": "/guide/Utilities/Storage.md",
+    "title": "Storage"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_UIImage_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/UIImage.md",
+    "path": "/guide/Utilities/UIImage.md",
+    "title": "UIImage"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Utilities_WebScraper_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Utilities/WebScraper.md",
+    "path": "/guide/Utilities/WebScraper.md",
+    "title": "WebScraper"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_Image_Style_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/Image%20Style.md",
+    "path": "/guide/View Modifiers/Image Style.md",
+    "title": "Image Style"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_List_and_Section_View_Modifiers_Common_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/List%20and%20Section%20View%20Modifiers/Common.md",
+    "path": "/guide/View Modifiers/List and Section View Modifiers/Common.md",
+    "title": "Common"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_List_and_Section_View_Modifiers_New_List_View_Modifiers_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/List%20and%20Section%20View%20Modifiers/New%20List%20View%20Modifiers.md",
+    "path": "/guide/View Modifiers/List and Section View Modifiers/New List View Modifiers.md",
+    "title": "New List View Modifiers"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_Navigation_View_Modifiers_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/Navigation%20View%20Modifiers.md",
+    "path": "/guide/View Modifiers/Navigation View Modifiers.md",
+    "title": "Navigation View Modifiers"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_Text_Field_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/Text%20Field.md",
+    "path": "/guide/View Modifiers/Text Field.md",
+    "title": "Text Field"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_Text_View_Modifiers_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/Text%20View%20Modifiers.md",
+    "path": "/guide/View Modifiers/Text View Modifiers.md",
+    "title": "Text View Modifiers"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_buttonStyle_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/buttonStyle.md",
+    "path": "/guide/View Modifiers/buttonStyle.md",
+    "title": "buttonStyle"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_contextMenu_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/contextMenu.md",
+    "path": "/guide/View Modifiers/contextMenu.md",
+    "title": "contextMenu"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_datePickerStyle_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/datePickerStyle.md",
+    "path": "/guide/View Modifiers/datePickerStyle.md",
+    "title": "datePickerStyle"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_formStyle_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/formStyle.md",
+    "path": "/guide/View Modifiers/formStyle.md",
+    "title": "formStyle"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_listStyle_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/listStyle.md",
+    "path": "/guide/View Modifiers/listStyle.md",
+    "title": "listStyle"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_refresable_refreshable_list_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/refresable/refreshable_list.md",
+    "path": "/guide/View Modifiers/refresable/refreshable_list.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_textFieldStyle_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/textFieldStyle.md",
+    "path": "/guide/View Modifiers/textFieldStyle.md",
+    "title": "textFieldStyle"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_toggleStyle_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/toggleStyle.md",
+    "path": "/guide/View Modifiers/toggleStyle.md",
+    "title": "toggleStyle"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_translationHost_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/translationHost.md",
+    "path": "/guide/View Modifiers/translationHost.md",
+    "title": "translationHost"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/View_Modifiers_widgetBackground_md.md": {
+    "url": "https://scriptingapp.github.io/guide/View%20Modifiers/widgetBackground.md",
+    "path": "/guide/View Modifiers/widgetBackground.md",
+    "title": "widgetBackground"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_AccessoryWidgetBackground_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/AccessoryWidgetBackground.md",
+    "path": "/guide/Views/AccessoryWidgetBackground.md",
+    "title": "AccessoryWidgetBackground"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Button_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Button.md",
+    "path": "/guide/Views/Button.md",
+    "title": "Button"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Controls_DatePicker_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Controls/DatePicker/index.md",
+    "path": "/guide/Views/Controls/DatePicker/index.md",
+    "title": "DatePicker"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Controls_DatePicker_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Controls/DatePicker/index_example.md",
+    "path": "/guide/Views/Controls/DatePicker/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Controls_Toggle_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Controls/Toggle/index.md",
+    "path": "/guide/Views/Controls/Toggle/index.md",
+    "title": "Toggle"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Controls_Toggle_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Controls/Toggle/index_example.md",
+    "path": "/guide/Views/Controls/Toggle/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Displaying_text_Quick_Start_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Displaying%20text/Quick%20Start/index.md",
+    "path": "/guide/Views/Displaying text/Quick Start/index.md",
+    "title": "Quick Start"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Displaying_text_Quick_Start_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Displaying%20text/Quick%20Start/index_example.md",
+    "path": "/guide/Views/Displaying text/Quick Start/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Displaying_text_Rich_Text_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Displaying%20text/Rich%20Text.md",
+    "path": "/guide/Views/Displaying text/Rich Text.md",
+    "title": "Rich Text"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Image_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Image/index.md",
+    "path": "/guide/Views/Image/index.md",
+    "title": "Image"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Image_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Image/index_example.md",
+    "path": "/guide/Views/Image/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_HStack_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/HStack/index.md",
+    "path": "/guide/Views/Layout/HStack/index.md",
+    "title": "HStack"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_HStack_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/HStack/index_example.md",
+    "path": "/guide/Views/Layout/HStack/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_LazyHStack_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/LazyHStack/index.md",
+    "path": "/guide/Views/Layout/LazyHStack/index.md",
+    "title": "LazyHStack"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_LazyHStack_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/LazyHStack/index_example.md",
+    "path": "/guide/Views/Layout/LazyHStack/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_LazyVStack_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/LazyVStack/index.md",
+    "path": "/guide/Views/Layout/LazyVStack/index.md",
+    "title": "LazyVStack"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_LazyVStack_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/LazyVStack/index_example.md",
+    "path": "/guide/Views/Layout/LazyVStack/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_VStack_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/VStack/index.md",
+    "path": "/guide/Views/Layout/VStack/index.md",
+    "title": "VStack"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Layout_VStack_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Layout/VStack/index_example.md",
+    "path": "/guide/Views/Layout/VStack/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_DisclosureGroup_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/DisclosureGroup/index.md",
+    "path": "/guide/Views/List/DisclosureGroup/index.md",
+    "title": "DisclosureGroup"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_DisclosureGroup_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/DisclosureGroup/index_example.md",
+    "path": "/guide/Views/List/DisclosureGroup/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_Editable_List_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/Editable%20List/index.md",
+    "path": "/guide/Views/List/Editable List/index.md",
+    "title": "Editable List"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_Editable_List_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/Editable%20List/index_example.md",
+    "path": "/guide/Views/List/Editable List/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_List_interaction_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/List%20interaction/index.md",
+    "path": "/guide/Views/List/List interaction/index.md",
+    "title": "List interaction"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_List_interaction_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/List%20interaction/index_example.md",
+    "path": "/guide/Views/List/List interaction/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_List_style_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/List%20style/index.md",
+    "path": "/guide/Views/List/List style/index.md",
+    "title": "List style"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_List_style_list_style_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/List%20style/list_style.md",
+    "path": "/guide/Views/List/List style/list_style.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_Refresable_List_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/Refresable%20List/index.md",
+    "path": "/guide/Views/List/Refresable List/index.md",
+    "title": "Refresable List"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_Refresable_List_refreshable_list_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/Refresable%20List/refreshable_list.md",
+    "path": "/guide/Views/List/Refresable List/refreshable_list.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_List_Selectable_List_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/List/Selectable%20List.md",
+    "path": "/guide/Views/List/Selectable List.md",
+    "title": "Selectable List"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Modal_presentaions_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Modal%20presentaions/index.md",
+    "path": "/guide/Views/Modal presentaions/index.md",
+    "title": "Modal presentaions"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Modal_presentaions_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Modal%20presentaions/index_example.md",
+    "path": "/guide/Views/Modal presentaions/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Navigation_NavigationStack_NavigationStack_with_path_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Navigation/NavigationStack/NavigationStack%20with%20path.md",
+    "path": "/guide/Views/Navigation/NavigationStack/NavigationStack with path.md",
+    "title": "NavigationStack with path"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Navigation_TabView_TabView_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Navigation/TabView/TabView.md",
+    "path": "/guide/Views/Navigation/TabView/TabView.md",
+    "title": "TabView"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Present_views_Dismissing_a_presented_view_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Present%20views/Dismissing%20a%20presented%20view/index.md",
+    "path": "/guide/Views/Present views/Dismissing a presented view/index.md",
+    "title": "Dismissing a presented view"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Present_views_Dismissing_a_presented_view_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Present%20views/Dismissing%20a%20presented%20view/index_example.md",
+    "path": "/guide/Views/Present views/Dismissing a presented view/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Text_input_Keyboard_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Text%20input/Keyboard.md",
+    "path": "/guide/Views/Text input/Keyboard.md",
+    "title": "Keyboard"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Text_input_SecureField_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Text%20input/SecureField/index.md",
+    "path": "/guide/Views/Text input/SecureField/index.md",
+    "title": "SecureField"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Text_input_SecureField_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Text%20input/SecureField/index_example.md",
+    "path": "/guide/Views/Text input/SecureField/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Text_input_TextField_index_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Text%20input/TextField/index.md",
+    "path": "/guide/Views/Text input/TextField/index.md",
+    "title": "TextField"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_Text_input_TextField_index_example_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/Text%20input/TextField/index_example.md",
+    "path": "/guide/Views/Text input/TextField/index_example.md",
+    "title": "Example"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Views_View_groupings_Form_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Views/View%20groupings/Form.md",
+    "path": "/guide/Views/View groupings/Form.md",
+    "title": "Form"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Widget_AccessoryWidgetBackground_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Widget/AccessoryWidgetBackground.md",
+    "path": "/guide/Widget/AccessoryWidgetBackground.md",
+    "title": "AccessoryWidgetBackground"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Widget_Animation_for_Widget_and_LiveActivity_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Widget/Animation%20for%20Widget%20and%20LiveActivity.md",
+    "path": "/guide/Widget/Animation for Widget and LiveActivity.md",
+    "title": "Animation for Widget and LiveActivity"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Widget_Tinted_Mode_Adaptation_Guide_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Widget/Tinted%20Mode%20Adaptation%20Guide.md",
+    "path": "/guide/Widget/Tinted Mode Adaptation Guide.md",
+    "title": "Tinted Mode Adaptation Guide"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Widget_Widget_API_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Widget/Widget%20API.md",
+    "path": "/guide/Widget/Widget API.md",
+    "title": "Widget API"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Widget_Widget_Background_in_Tinted_Mode_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Widget/Widget%20Background%20in%20Tinted%20Mode.md",
+    "path": "/guide/Widget/Widget Background in Tinted Mode.md",
+    "title": "Widget Background in Tinted Mode"
+  },
+  "/var/minis/skills/scripting-app-dev/references/api/Widget_Widget_Quick_Start_md.md": {
+    "url": "https://scriptingapp.github.io/guide/Widget/Widget%20Quick%20Start.md",
+    "path": "/guide/Widget/Widget Quick Start.md",
+    "title": "Widget Quick Start"
+  }
+}
