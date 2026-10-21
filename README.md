@@ -61,6 +61,19 @@ python3 scripts/build_scripting.py ./workspace/🐝我的脚本
 
 ---
 
+## 📦 凭据桥（设备侧脚本）
+
+`cred-bridge.scripting` 是跑在设备上的「凭据桥」：读取「🐝密码管理器」的凭据并回传给本机
+(`http://127.0.0.1:8765/cred`) 的一次性接收器。安装方式（Scripting App 会弹导入确认）：
+
+```
+scripting://import_scripts?urls=<上面 raw 链接的 URL 编码>
+```
+
+装好后本机即可用 `scripts/cred.sh get|run|list` 取凭据。
+
+---
+
 ## ⚠️ 边界说明
 
 - 本仓库的检查脚本只能做**静态检查**（JSON 结构 + `tsc --noEmit`）。
