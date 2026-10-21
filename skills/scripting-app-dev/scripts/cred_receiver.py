@@ -2,11 +2,13 @@
 """
 一次性凭据接收器（iSH 侧）。
 
-设备上的「凭据桥」脚本把凭据 POST 到这里；本进程收到一条合法请求后，
-把内容写入 --out 指定的文件（0600 权限），**不把明文打印到 stdout**，然后退出。
+设备上的「凭据桥」脚本把凭据 POST 到这里；本进程把每条合法请求写入
+--out 指定的文件（0600）并追加到 <out>.log（JSONL），**不把明文打印到 stdout**，
+持续到 --timeout 秒。
 
 用法:
-  python3 cred_receiver.py --token <一次性token> [--host 127.0.0.1] [--port 8765] [--out /tmp/.minis-cred] [--timeout 60]
+  python3 cred_receiver.py --token <一次性token> [--host 0.0.0.0] [--port 8765]
+                           [--out /tmp/.minis-cred] [--timeout 60]
 """
 from __future__ import annotations
 
@@ -14,10 +16,9 @@ import argparse
 import json
 import os
 import stat
-import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-STATE = {"done": False, "payload": None, "auth_ok": False}
+STATE = {"count": 0, "auth_ok": False}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -28,8 +29,7 @@ class Handler(BaseHTTPRequestHandler):
         pass
 
     def do_GET(self):
-        # 健康检查：只回一个不含凭据的状态
-        body = b'{"status":"waiting"}'
+        body = json.dumps({"status": "waiting", "received": STATE["count"]}).encode()
         self.send_response(200)
         self.send_header("Content-Type", "application/json")
         self.send_header("Content-Length", str(len(body)))
@@ -54,8 +54,9 @@ class Handler(BaseHTTPRequestHandler):
         with os.fdopen(fd, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False)
         os.chmod(Handler.out, stat.S_IRUSR | stat.S_IWUSR)
-        STATE["done"] = True
-        STATE["payload"] = payload
+        with open(Handler.out + ".log", "a", encoding="utf-8") as f:
+            f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+        STATE["count"] += 1
         STATE["auth_ok"] = True
         body = b'{"ok":true}'
         self.send_response(200)
@@ -81,20 +82,15 @@ def main() -> int:
     httpd.timeout = 1
     print(f"RECEIVER_READY {args.host}:{args.port} -> {Handler.out}", flush=True)
     waited = 0
-    while not STATE["done"] and waited < args.timeout:
+    while waited < args.timeout:
         httpd.handle_request()
         waited += 1
     httpd.server_close()
-    if not STATE["done"]:
+    if not STATE["auth_ok"]:
         print("RECEIVER_TIMEOUT", flush=True)
         return 1
-    # 只回状态，不回明文
-    payload = STATE["payload"] or {}
-    if payload.get("ok"):
-        print("RECEIVED_OK", flush=True)
-        return 0
-    print("RECEIVED_ERR " + str(payload.get("error") or payload.get("hint") or "unknown"), flush=True)
-    return 2
+    print(f"RECEIVED_OK count={STATE['count']}", flush=True)
+    return 0
 
 
 if __name__ == "__main__":

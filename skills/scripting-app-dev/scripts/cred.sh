@@ -81,7 +81,7 @@ bridge_call() { # $1=query(已编码) → 输出 JSON
   n="$(nonce)"
   token="$(python3 -c 'import secrets;print(secrets.token_hex(16))')"
 
-  rm -f "$OUT_FILE"
+  rm -f "$OUT_FILE" "$OUT_FILE.log"
   : > "$LOG"
 
   python3 "$RECEIVER" --token "$token" --host 0.0.0.0 --port "$PORT" \
@@ -102,8 +102,30 @@ bridge_call() { # $1=query(已编码) → 输出 JSON
   lan_ip="$(ip -4 -o addr show 2>/dev/null | awk '{print $4}' | cut -d/ -f1 | grep -v '^127\.' | head -1)"
   local cbs="http%3A%2F%2F127.0.0.1%3A${PORT}%2Fcred"
   [ -n "$lan_ip" ] && cbs="$cbs%2Chttp%3A%2F%2F${lan_ip}%3A${PORT}%2Fcred"
+
+  # 触发方式 A：URL scheme（需要设备可交互：解锁 + 前台）
   local url="scripting://run/${bridge_name}?${q}&nonce=${n}&clipboard=1&confirm=true&callback=${cbs}&token=${token}"
   apple-open "$url" >/dev/null 2>&1
+
+  # 触发方式 B：把请求写进脚本目录 __request.json，由 scripting-cli 热推，
+  #            设备上的脚本在 live-debug 下会自动重跑（需 App 连着 CLI 且正打开该脚本）
+  local bridge_dir="/var/minis/shared/scripting/scripts/${bridge_name}"
+  if [ -d "$bridge_dir" ]; then
+    python3 - "$bridge_dir/__request.json" "$n" "$token" "$cbs" "$q" <<'PY'
+import json, sys, urllib.parse
+path, nonce, token, cbs, query = sys.argv[1:6]
+req = {
+    "nonce": nonce, "token": token,
+    "callback": urllib.parse.unquote(cbs),
+    "clipboard": "1", "confirm": True,
+}
+for k, vals in urllib.parse.parse_qs(query).items():
+    if vals:
+        req[k] = vals[0]
+json.dump(req, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+print("请求已写入", path, "keys:", sorted(req.keys()))
+PY
+  fi
 
   local payload
   payload="$(wait_for_payload "$n")"
@@ -113,7 +135,7 @@ bridge_call() { # $1=query(已编码) → 输出 JSON
 
   if [ $rc -ne 0 ] || [ -z "$payload" ]; then
     echo "取凭据失败：设备端未回传（receiver: $(tail -n 1 "$LOG" 2>/dev/null)）" >&2
-    echo "排查：① 手机是否解锁/在前台；② Scripting App 是否已连上 scripting-cli（当前端口见 /root/sc-cli/port）；③ 设备上是否有「$BRIDGE_SCRIPT」脚本。" >&2
+    echo "排查：① 手机解锁且 Minis 在前台；② Scripting App 连上 scripting-cli（当前端口 $(cat /root/sc-cli/port 2>/dev/null)）；③ App 里是否有「$BRIDGE_SCRIPT」脚本（桌面同步里点一次即可拉取）。" >&2
     return 1
   fi
   printf '%s' "$payload"
