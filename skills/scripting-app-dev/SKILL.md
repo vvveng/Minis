@@ -171,6 +171,43 @@ const credentialsPath =
 现成实现（可直接嵌进用户脚本或改用）：`assets/credentials.ts`（模块化版）、`references/api/` 外的原始实现见 `references/upstream-skills.md`。
 用户端可执行版本：`scripting-ts run <skill_dir>/scripts/main.ts --queryparameters '{"projectCode":"12345","key":"token","confirm":true}'`。
 
+### 5.1 在本机（iSH/Minis）怎么取到凭据 ⚠️ 关键
+
+**iOS 沙盒隔离：iSH 读不到 Scripting 的 App Group 容器**（`/var/mobile` 在 iSH 里根本不存在），
+所以我**不能直接打开** `credentials.json`。必须走一条"设备 → 本机"的桥。
+
+已就绪的桥（`assets/凭据桥/` + `scripts/cred_receiver.py` + `scripts/cred.sh`）：
+
+| 角色 | 位置 | 作用 |
+|---|---|---|
+| 设备侧脚本 | `assets/凭据桥/index.tsx`（已部署到 CLI 工作区 `scripts/凭据桥/`） | 在设备上读凭据 → POST 到 `http://127.0.0.1:8765/cred`（带一次性 token） |
+| 本机接收器 | `scripts/cred_receiver.py` | 收一条请求，把结果写进 0600 临时文件，**明文不打印到 stdout**，然后退出 |
+| 取用封装 | `scripts/cred.sh` | `get` 取值到文件（stdout 只给路径）/ `run` 以 `$CRED` 注入执行命令 / `list` 列服务与项目码 |
+
+```bash
+SKILL=/var/minis/skills/scripting-app-dev
+bash $SKILL/scripts/cred.sh list                 # 列出服务与项目码（无明文）
+bash $SKILL/scripts/cred.sh get github token     # → 打印临时文件路径
+bash $SKILL/scripts/cred.sh run github token -- 'curl -s -H "Authorization: Bearer $CRED" https://api.github.com/user'
+```
+
+**铁律**：`cred.sh get` 只能拿路径，`cred.sh run` 才能用值；**永远不要把明文 echo/print 到命令输出**，
+否则会进对话上下文和日志。用完 `rm -f /tmp/.minis-cred`。
+
+**触发前提**：设备上要有「凭据桥」这个脚本。
+`scripting://run/<脚本名>` 可唤起（**中文名不要百分号编码**，编码后 App 认不出；`apple-open` 偶发 opened:false，重试即可）。
+若设备上还没有该脚本，让用户在 Scripting App 的**桌面同步**里点开它一次，之后 CLI 会热推更新。
+
+**更安全的替代**：不需要明文时，把"要做的动作"写成 Scripting 脚本，让脚本在设备上自己读凭据并完成
+（调 API / 写文件 / 发通知）——凭据完全不出设备，这是首选。
+
+**已核实的实现细节**（来自 `🐝密码管理器` 源码 2026-09-07 版）：
+- 凭据路径确为 `FileManager.appGroupDocumentsDirectory + "/🐝密码管理器/credentials.json"`（另有 legacy 路径 `.../scripting-agent/workspace/default/credentials.json`，App 会自动迁移）。
+- 账号结构：`services[服务名][] → { id, fields[], code? }`；`fields[]` 的 `secure` 标记密码/Token/OTP。
+- 该发布版**还没有 `code`（项目码）字段**；若设备上的版本更新则有。桥接脚本把 `code` 当可选，缺失时自动退回按 service 定位。
+
+
+
 ---
 
 ## 6. 历史版本 / 备份查阅
@@ -252,10 +289,14 @@ scripting-app-dev/
 │   ├── index-resident.tsx        常驻/可恢复模板
 │   ├── widget.tsx                小组件模板
 │   ├── credentials.ts            🐝密码管理器凭据读取模块
+│   ├── 凭据桥/                    设备侧桥接脚本（index.tsx + script.json）
 │   ├── scripting-stub.d.ts       本地 tsc 检查用的类型兜底（gen_stub.py 生成）
 │   └── tsconfig.check.json       检查用 tsconfig
 └── scripts/
-    ├── check_project.sh          项目结构校验 + tsc 检查
+    ├── check_project.sh          项目结构校验 + tsc 检查（薄封装）
+    ├── check_project.py          校验逻辑（优先用 CLI 同步下来的真实 dts，退回 stub）
+    ├── cred.sh                   凭据取用封装（get / run / list）
+    ├── cred_receiver.py          本机一次性凭据接收器
     ├── build_scripting.py        打包成 .scripting
     ├── new_project.py            脚手架生成
     └── gen_stub.py               重新生成 scripting-stub.d.ts

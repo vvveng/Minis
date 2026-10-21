@@ -1,0 +1,7 @@
+{
+  "name": "凭据桥",
+  "icon": "key.fill",
+  "color": "systemYellow",
+  "version": "1.0.0",
+  "description": "在设备上读取「🐝密码管理器」凭据并回传给 iSH 侧一次性接收器（凭据不出设备）"
+}

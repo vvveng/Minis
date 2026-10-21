@@ -76,6 +76,9 @@ def check_structure(project: str) -> list[tuple[str, str]]:
     return problems, notes
 
 
+REAL_DTS = "/var/minis/shared/scripting/dts"
+
+
 def run_tsc(project: str, skill_dir: str) -> tuple[list[str], list[str], str]:
     """返回 (硬错误, 软告警, 说明)"""
     if shutil.which("npx") is None:
@@ -90,32 +93,58 @@ def run_tsc(project: str, skill_dir: str) -> tuple[list[str], list[str], str]:
                 shutil.copytree(src, dst, dirs_exist_ok=True)
             else:
                 shutil.copyfile(src, dst)
-        stub = os.path.join(skill_dir, "assets", "scripting-stub.d.ts")
-        tsconfig = os.path.join(skill_dir, "assets", "tsconfig.check.json")
-        if os.path.isfile(stub):
-            shutil.copyfile(stub, os.path.join(tmp, "scripting-stub.d.ts"))
-        if os.path.isfile(tsconfig):
-            shutil.copyfile(tsconfig, os.path.join(tmp, "tsconfig.json"))
-        else:
-            json.dump(
-                {
-                    "compilerOptions": {
-                        "target": "ES2020",
-                        "module": "ESNext",
-                        "moduleResolution": "bundler",
-                        "jsx": "preserve",
-                        "strict": False,
-                        "noEmit": True,
-                        "skipLibCheck": True,
-                        "esModuleInterop": True,
-                        "types": [],
-                        "lib": ["ES2020", "DOM"],
-                    },
-                    "include": ["**/*.ts", "**/*.tsx"],
+
+        # 优先用 App 同步下来的真实类型声明（CLI 工作区 dts/），否则退回宽松 stub
+        real_dts = os.path.join(REAL_DTS, "scripting.d.ts")
+        if os.path.isfile(real_dts):
+            os.makedirs(os.path.join(tmp, "dts"), exist_ok=True)
+            for f in os.listdir(REAL_DTS):
+                if f.endswith(".d.ts"):
+                    shutil.copyfile(os.path.join(REAL_DTS, f), os.path.join(tmp, "dts", f))
+            tsconfig = {
+                "compilerOptions": {
+                    "target": "ESNext",
+                    "lib": ["esnext"],
+                    "strict": True,
+                    "esModuleInterop": True,
+                    "allowSyntheticDefaultImports": True,
+                    "module": "CommonJS",
+                    "moduleResolution": "node",
+                    "resolveJsonModule": True,
+                    "skipLibCheck": True,
+                    "noEmit": True,
+                    "jsx": "react",
+                    "jsxFactory": "createElement",
+                    "jsxFragmentFactory": "Fragment",
+                    "types": [],
+                    "paths": {"scripting": ["./dts/scripting.d.ts"]},
                 },
-                open(os.path.join(tmp, "tsconfig.json"), "w", encoding="utf-8"),
-                indent=2,
-            )
+                "include": ["./dts/*.d.ts", "**/*.ts", "**/*.tsx"],
+                "exclude": ["./dts/scripting.d.ts"],
+            }
+            mode = "真实 dts"
+        else:
+            stub = os.path.join(skill_dir, "assets", "scripting-stub.d.ts")
+            if os.path.isfile(stub):
+                shutil.copyfile(stub, os.path.join(tmp, "scripting-stub.d.ts"))
+            tsconfig = {
+                "compilerOptions": {
+                    "target": "ES2020",
+                    "module": "ESNext",
+                    "moduleResolution": "bundler",
+                    "jsx": "preserve",
+                    "strict": False,
+                    "noEmit": True,
+                    "skipLibCheck": True,
+                    "esModuleInterop": True,
+                    "types": [],
+                    "lib": ["ES2020", "DOM"],
+                },
+                "include": ["**/*.ts", "**/*.tsx"],
+            }
+            mode = "宽松 stub"
+
+        json.dump(tsconfig, open(os.path.join(tmp, "tsconfig.json"), "w", encoding="utf-8"), indent=2)
 
         proc = subprocess.run(
             ["npx", "-y", "-p", "typescript@5", "tsc", "-p", "tsconfig.json", "--noEmit"],
@@ -128,7 +157,7 @@ def run_tsc(project: str, skill_dir: str) -> tuple[list[str], list[str], str]:
         errors = [l for l in out.splitlines() if re.search(r"error TS\d+", l)]
         hard = [l for l in errors if not any(code in l for code in SOFT_CODES)]
         soft = [l for l in errors if any(code in l for code in SOFT_CODES)]
-        note = "tsc 无语法/类型错误" if not errors else f"tsc 发现 {len(errors)} 条问题"
+        note = f"tsc 无语法/类型错误（{mode}）" if not errors else f"tsc 发现 {len(errors)} 条问题（{mode}）"
         return hard, soft, note
     except FileNotFoundError:
         return [], [], "npx 不可用，跳过 tsc"
