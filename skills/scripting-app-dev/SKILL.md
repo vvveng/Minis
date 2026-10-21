@@ -180,9 +180,14 @@ const credentialsPath =
 
 | 角色 | 位置 | 作用 |
 |---|---|---|
-| 设备侧脚本 | `assets/凭据桥/index.tsx`（已部署到 CLI 工作区 `scripts/凭据桥/`） | 在设备上读凭据 → POST 到 `http://127.0.0.1:8765/cred`（带一次性 token） |
-| 本机接收器 | `scripts/cred_receiver.py` | 收一条请求，把结果写进 0600 临时文件，**明文不打印到 stdout**，然后退出 |
-| 取用封装 | `scripts/cred.sh` | `get` 取值到文件（stdout 只给路径）/ `run` 以 `$CRED` 注入执行命令 / `list` 列服务与项目码 |
+| 设备侧脚本 | `assets/凭据桥/index.tsx`（已部署到 CLI 工作区 `scripts/凭据桥/`） | 在设备上读凭据 → 三条通道同时发 |
+| 本机接收器 | `scripts/cred_receiver.py` | 收一条请求写 0600 临时文件，**明文不打印到 stdout** |
+| 取用封装 | `scripts/cred.sh` | `get` 取值到文件（stdout 只给路径）/ `run` 以 `$CRED` 注入执行 / `list` 列服务与项目码 |
+
+**三条回传通道**（谁先到用谁）：
+1. `HTTP` → `http://127.0.0.1:8765/cred`（环回，优先）+ `http://<局域网IP>:8765/cred`（备选）；一次性 token 鉴权。
+2. `剪贴板` → `Pasteboard.setString(JSON)`；本机用 `apple-clipboard get` 读，读完立刻 `apple-clipboard clear`。
+3. `文件` → 设备上 `<脚本目录>/__result.json`，走 scripting-cli 同步通道回传。
 
 ```bash
 SKILL=/var/minis/skills/scripting-app-dev
@@ -194,17 +199,35 @@ bash $SKILL/scripts/cred.sh run github token -- 'curl -s -H "Authorization: Bear
 **铁律**：`cred.sh get` 只能拿路径，`cred.sh run` 才能用值；**永远不要把明文 echo/print 到命令输出**，
 否则会进对话上下文和日志。用完 `rm -f /tmp/.minis-cred`。
 
-**触发前提**：设备上要有「凭据桥」这个脚本。
-`scripting://run/<脚本名>` 可唤起（**中文名不要百分号编码**，编码后 App 认不出；`apple-open` 偶发 opened:false，重试即可）。
-若设备上还没有该脚本，让用户在 Scripting App 的**桌面同步**里点开它一次，之后 CLI 会热推更新。
+### 5.2 桥的触发方式（踩过的坑）
 
-**更安全的替代**：不需要明文时，把"要做的动作"写成 Scripting 脚本，让脚本在设备上自己读凭据并完成
-（调 API / 写文件 / 发通知）——凭据完全不出设备，这是首选。
+- `scripting://run/<脚本名>` 唤起脚本。⚠️ **中文脚本名必须原样传**，百分号编码后 App 认不出（会静默不运行、表现为超时）。
+- `apple-open` 唤起依赖设备状态：**手机锁屏或 Minis 不在前台时会返回 `opened:false`**，解锁并保持前台即可恢复。
+  `apple-device info` 仍能返回 → 说明设备桥活着、只是 UI 层不可用。
+- `apple-clipboard` 在同样情况下读写不到内容（set 报 ok 但 get 为空）→ 剪贴板通道要设备处于可交互状态。
+- 设备端脚本也支持**无参数运行**：没有 URL 参数时读同目录 `__request.json`
+  （由 CLI 热推过去），所以"让用户在 App 里点一下脚本"也能触发。
+- **更安全的替代**：不需要明文时，把"要做的动作"写成 Scripting 脚本，让脚本在设备上自己读凭据并完成
+  （调 API / 写文件 / 发通知）——凭据完全不出设备，这是首选。
 
-**已核实的实现细节**（来自 `🐝密码管理器` 源码 2026-09-07 版）：
+### 5.3 scripting-cli（设备↔本机同步通道）
+
+- 工作目录 `/var/minis/shared/scripting/`（`scripts/` 放脚本，`dts/` 是 App 同步下来的**真实类型声明**）。
+- 启停：`sh /root/sc-cli/start.sh [port|stop|status]`；**必须用 SIGTERM 停**，`kill -9` 会在 iSH 里留下
+  "接受连接但不回数据"的僵尸端口（表现为 curl 挂起）。
+- iSH 容器内 multicast 不可达，**绝不能加 `--bonjour`**（会直接崩掉服务）。
+- App 连上后会把设备里的脚本推到 `scripts/`；CLI 侧改动会**热推回设备**（日志 `[脚本名] File changed:`）。
+- 想让 CLI 监听某个脚本（从而能热推它），可自己调 CLI 的 REST：
+  `POST http://127.0.0.1:<port>/syncScriptFromServer`，body 带 `socketId`（日志里 `Client [xxx] connected`）、
+  `scriptName`、`globalDtsFileName`、`scriptingDtsFileName`。
+- **检查脚本类型优先用 `dts/` 里的真实声明**（`check_project.py` 已自动优先用它），其次才用宽松 stub。
+
+### 5.4 已核实的实现细节（来自 `🐝密码管理器` 源码 2026-09-07 版）
 - 凭据路径确为 `FileManager.appGroupDocumentsDirectory + "/🐝密码管理器/credentials.json"`（另有 legacy 路径 `.../scripting-agent/workspace/default/credentials.json`，App 会自动迁移）。
 - 账号结构：`services[服务名][] → { id, fields[], code? }`；`fields[]` 的 `secure` 标记密码/Token/OTP。
 - 该发布版**还没有 `code`（项目码）字段**；若设备上的版本更新则有。桥接脚本把 `code` 当可选，缺失时自动退回按 service 定位。
+- `FileManager` / `Pasteboard` 是**全局命名空间**（见 `dts/global.d.ts`），不需要 import。
+
 
 
 

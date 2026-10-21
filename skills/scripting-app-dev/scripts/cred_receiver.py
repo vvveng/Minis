@@ -68,7 +68,7 @@ class Handler(BaseHTTPRequestHandler):
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--token", required=True)
-    ap.add_argument("--host", default="127.0.0.1")
+    ap.add_argument("--host", default="0.0.0.0")
     ap.add_argument("--port", type=int, default=8765)
     ap.add_argument("--out", default="/tmp/.minis-cred")
     ap.add_argument("--timeout", type=int, default=60)
